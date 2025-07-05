@@ -3,9 +3,9 @@ function greet(name){
 }
 // Trigger test run
 
-//try 13
+//try 14
   module.exports = greet
 
   if (require.main == module) {
-    console.log{greet("world")}
+        console.log(greet("world"));
   }
