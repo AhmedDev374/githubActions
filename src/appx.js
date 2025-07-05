@@ -4,9 +4,8 @@ function greet(name){
 // Trigger test run
 
 // //try 15
-//   module.exports = greet
+  module.exports = greet
 
-//   if (require.main == module) {
-//         console.log(greet("world"));
-//   }
-//
+  if (require.main == module) {
+        console.log(greet("world"));
+  }
