@@ -5,3 +5,13 @@ on:
       - "release/**"
     paths:
       - "src/**"
+jobs:
+  test:
+    runs-on: ubuntu-latesy
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: tun tests
+        run: npm testts
+    
