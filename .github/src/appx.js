@@ -3,7 +3,7 @@ function greet(name){
 }
 // Trigger test run
 
-//try 7
+//try 8
   module.exports = greet
 
   if (require.main == module) {
