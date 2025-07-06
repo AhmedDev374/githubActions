@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+jobs:
+  example:
+     runs-on: unbuntu-latest
+     steps:
+     - run: |
+         dispatch=true
+         if [[ dispatch ]]; then
+           echo "::warning::Dispatched function found"
+         fi
