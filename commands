@@ -1,2 +1,6 @@
 commands:
 git push --set-upstream origin test [create a new branch]
+
+git ceckout main swithch to git hub
+git checkout main
+git pull
