@@ -1,0 +1,24 @@
+name: first Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a welcome message
+        run: echo "Welcome to our first guthub"
+
+      - name: checkout
+        uses: actions/checkout@v5.0.0
+        
+      - name: list repository files
+        run: ls -la 
+      
+
+      
+    
