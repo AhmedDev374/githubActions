@@ -5,7 +5,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
      - run: |
-         dispatch=true
-         if [[ dispatch ]]; then
-           echo "::warning::Dispatched function found"
+         deprecated=true
+         if [[ deprecated ]]; then
+           echo "::warning::Deprecated function found"
          fi
