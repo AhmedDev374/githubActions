@@ -1,12 +1,9 @@
-function greet(name){
+function greet(name) {
   return `Hello, ${name}!`;
 }
-// Trigger test run
 
-// //try 15
-//   module.exports = greet
+module.exports = greet;  // ✅ this makes the function available to your test
 
-//   if (require.main == module) {
-//         console.log(greet("world"));
-//   }
-//
+if (require.main === module) {
+  console.log(greet("world")); // just a test if run directly
+}
