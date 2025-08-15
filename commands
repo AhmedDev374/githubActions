@@ -6,3 +6,24 @@ git checkout main
 git pull
 
 gh workflow run manual.yml -f enviroment=production
+
+
+on:
+  repository_dispatch:
+    types: [incident_report]
+
+jobs:
+  handle-incident:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print incident details
+        run: echo "Incident reported"
+
+ghactionscourse git:(main) export GITHUB_PAT=ghp_JZoNivKLRDdyCmkP0zGdbleWTi0Zwe1HEdPS
+ghactionscourse git:(main) 
+ghactionscourse git:(main) curl -X POST \
+  -H "Authorization: token $GITHUB_PAT" \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/abohmeed/ghactionscourse/dispatches \
+  -d '{"event_type":"incident_report"}'
+ghactionscourse git:(main)
