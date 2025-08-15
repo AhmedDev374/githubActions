@@ -1,2 +1,2 @@
 commands:
-git push --set-upstream origin test
+git push --set-upstream origin test [create a new branch]
